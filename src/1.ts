@@ -5,7 +5,7 @@ const url = 'https://adventofcode.com/2020/day/1/input';
 
 const getInputData = async () : Promise<number[]> => {
   const { data } = await axios.get(url);
-  return data.split('\n').filter(Boolean).map((s: string) => Number(s));
+  return data.split('\n').filter(Boolean).map(Number);
 };
 
 const pickNumbersWhichSumTo = (numbers: number[], sum: number) => (

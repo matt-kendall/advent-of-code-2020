@@ -10,9 +10,19 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
 rules:
-  linebreak-style: [error, windows]
+  linebreak-style: 
+    - error
+    - windows
   no-console: off
   import/extensions: off
+  max-len: 
+    - error
+    - 
+      code: 150
+  no-unused-vars: 
+    - error
+    - 
+      argsIgnorePattern: '^_'
 settings:
     import/resolver: 
       node:
